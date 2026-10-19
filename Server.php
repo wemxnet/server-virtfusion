@@ -196,7 +196,7 @@ class Server extends ServerExtension
             $order->createExternalUser([
                 'external_id' => $externalUser['id'],
                 'username' => $user->email,
-                'password' => $externalUser['password'] ?? null,
+                'password' => $externalUser['password'] ?? '',
                 'data' => $externalUser,
             ]);
 
